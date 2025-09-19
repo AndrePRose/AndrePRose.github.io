@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Andre Rose — Portfolio</title>
+  <meta name="description" content="Portfolio of Andre Rose — marketing student, projects, skills, contact" />
+
+  <!-- FAVICON (replace with your own) -->
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+  <style>
+    /* Simple, clean responsive portfolio styles */
+    :root{--accent:#0ea5a4;--bg:#0f172a;--card:#0b1220;--muted:#9aa4b2}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071028 0%, #071827 100%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:18px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#0ea5a4,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{margin-left:14px;font-size:0.95rem;color:#cfe7ee}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+    .hero h1{margin:0;font-size:2.1rem}
+    .hero p{color:var(--muted);line-height:1.5}
+    .cta{margin-top:18px}
+    .btn{background:var(--accent);color:#032024;padding:10px 14px;border-radius:8px;font-weight:600}
+
+    .card{background:linear-gradient(180deg,#071223 0%, rgba(255,255,255,0.02) 100%);border-radius:12px;padding:18px}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px;margin-top:20px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg,#071a2b 0%, rgba(255,255,255,0.01) 100%);min-height:140px}
+    .proj-title{font-weight:700;margin-bottom:6px}
+    .proj-desc{color:var(--muted);font-size:0.95rem}
+    .tags{margin-top:8px}
+    .tag{display:inline-block;background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:999px;margin-right:8px;font-size:.8rem;color:var(--muted)}
+
+    .about-skills{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:22px}
+    .skills ul{list-style:none;padding:0;margin:0}
+    .skills li{background:rgba(255,255,255,0.02);padding:8px;margin-bottom:8px;border-radius:8px;color:var(--muted)}
+
+    footer{margin-top:28px;padding:18px;text-align:center;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:880px){
+      .hero{grid-template-columns:1fr}
+      .about-skills{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AF</div>
+        <div>
+          <div style="font-weight:700">Andre Rose</div>
+          <div style="font-size:.9rem;color:var(--muted)">Marketing & Management • University of Auckland</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Hi — I'm Andre. I build marketing campaigns and data-driven content that converts.</h1>
+        <p>I’m a recent Commerce grad (Marketing & Management). I specialise in social strategy, campaign analytics, and content production — I love turning ideas into measurable growth.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">See my work</a>
+          <a style="margin-left:12px;color:var(--muted)" href="/resume.pdf" target="_blank">Download resume</a>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Contact</h3>
+        <p style="margin:6px 0;color:var(--muted)">Email: <a href="mailto:andrerose79@gmail.com">andrerose79@gmail.com</a></p>
+        <p style="margin:6px 0;color:var(--muted)">LinkedIn: <a href="https://www.linkedin.com/in/andre-rose-412450274" target="_blank">https://www.linkedin.com/in/andre-rose-412450274</a></p>
+        <p style="margin:6px 0;color:var(--muted)">Location: Auckland, NZ</p>
+      </aside>
+    </section>
+
+    <section id="projects" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Selected projects</h2>
+      <div class="projects" id="projects-grid">
+        <!-- Project 1 -->
+        <article class="project">
+          <div class="proj-title">Campaign — Mushroom Coffee</div>
+          <div class="proj-desc">Created short form organic video content on social media platforms to promote a NZ mushroom coffee brand.Increased awareness and conversions.</div>
+          <div class="tags">
+            <span class="tag">Social</span>
+            <span class="tag">Analytics</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project">
+          <div class="proj-title">Case study — University project</div>
+          <div class="proj-desc">Designed a go-to-market plan for a local startup; completed competitor analysis and media plan.</div>
+          <div class="tags">
+            <span class="tag">Strategy</span>
+            <span class="tag">Presentation</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project">
+          <div class="proj-title">Personal website redesign</div>
+          <div class="proj-desc">Built a responsive portfolio to showcase work. Implemented SEO basics and performance improvements.</div>
+          <div class="tags">
+            <span class="tag">Web</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about" class="about-skills">
+      <div class="card">
+        <h2 style="margin-top:0">About me</h2>
+        <p>I’m Andre — a marketing student and creator who loves turning data into creative campaigns. I’m focused on social channels, content creation, and analytics. Currently looking for graduate roles in marketing and social media, but also open to anything on the ground floor with good career progression.</p>
+        <p style="color:var(--muted)"><strong>Tip:</strong> I love working with others and thrive in a fast-paced environment.</p>
+      </div>
+
+      <aside class="card skills">
+        <h3 style="margin-top:0">Skills</h3>
+        <ul>
+          <li>Social strategy & content planning</li>
+          <li>Google Analytics / Data Studio basics</li>
+          <li>Canva, Capcut, Photoshop basics</li>
+          <li>Copywriting for social & email</li>
+          <li>HTML, CSS — basic frontend skills</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:18px">
+      <h2 style="margin-top:0">Get in touch</h2>
+      <p style="color:var(--muted)">Prefer email? <a href="andrerose79@gmail.com">andrerose79@gmail.com</a> — or message me on LinkedIn.</p>
+      <form onsubmit="sendMessage(event)" style="margin-top:12px;display:flex;flex-direction:column;gap:8px;max-width:520px">
+        <input id="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:none;background:#071523;color:#e6eef6" />
+        <input id="email" placeholder="Your email" type="email" required style="padding:10px;border-radius:8px;border:none;background:#071523;color:#e6eef6" />
+        <textarea id="message" rows="4" placeholder="Message" required style="padding:10px;border-radius:8px;border:none;background:#071523;color:#e6eef6"></textarea>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-note" style="color:var(--muted);font-size:.9rem;margin:0"></p>
+      </form>
+    </section>
+
+    <footer>
+      Built with ❤️ • Andre Rose — <a href="#contact">Contact</a>
+    </footer>
+  </div>
+
+  <script>
+    // Simple contact handler: opens user's mail client using mailto (no backend required)
+    function sendMessage(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      const mailto = 'mailto:you@example.com?subject=' + subject + '&body=' + body;
+      // fallback: open mailto in new window
+      window.location.href = mailto;
+      document.getElementById('form-note').textContent = 'Opening your email client…';
+    }
+  </script>
+</body>
+</html>
